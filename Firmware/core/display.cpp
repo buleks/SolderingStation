@@ -14,7 +14,7 @@ void tick() {
     snprintf(line1,
         17,
         "%3d/%3hu %c   %3d%%",
-        static_cast<int>(temp),
+        static_cast<int>(round(temp)),
         core::persistent_state.target,
         storage::stateIsSaved() ? ' ' : '*',
         static_cast<int>(power));
