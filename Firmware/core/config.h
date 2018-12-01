@@ -17,6 +17,8 @@ enum class MemoryType : uint16_t {
     MEM_24C04 = 512,
     MEM_24C08 = 1024,
     MEM_24C16 = 2048,
+    MEM_24C32 = 4096,
+    MEM_24C64 = 8192,
 };
 
 constexpr static MemoryType memory_type = MemoryType::MEM_24C01;
